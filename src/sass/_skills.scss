@@ -1,0 +1,15 @@
+.skills-content {
+  @include bg($skills-color);
+}
+.skills-wrap {
+  color: #ffffff;
+  margin-top: 15%;
+  text-align: center;
+}
+.circle {
+  padding-bottom: 15%;
+  p {
+    font-size: $size-text;
+    padding-top: 5%;
+  }
+}

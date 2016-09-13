@@ -1,0 +1,11 @@
+mixin menu(title,type)
+    li(class=type)
+        a(href="#")=title
+mixin block(type)
+    div(class=`bottom-${type}`)
+        .right-block
+        .left-block
+mixin progres(text,value)
+    .col-lg-3
+        div(class=`circle ${value}`)
+            p=text

@@ -1,0 +1,36 @@
+@mixin hw($height,$width){
+  height: $height;
+  width: $width;
+}
+@mixin hover($background-color){
+    background-color: $background-color;
+    transition: all 400ms ease-in-out;
+}
+@mixin block($color,$bottom) {
+  %block {
+    position: absolute;
+    width: 50%;
+    height: 45px;
+    background-color: $color;
+  }
+  position: absolute;
+  height: 45px;
+  width: 100%;
+  bottom: $bottom;
+  overflow: hidden;
+  .right-block {
+    @extend %block;
+    transform-origin: bottom left;
+    transform: skew(-45deg);
+    left: 50%
+  }
+  .left-block {
+    transform-origin: bottom right;
+    @extend %block;
+    transform: skew(45deg);
+  }
+}
+@mixin bg ($color) {
+  height: 100vh;
+  background-color: $color;
+}

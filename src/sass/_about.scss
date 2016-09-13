@@ -1,0 +1,18 @@
+.about-content {
+  @include bg($about-color);
+  .bottom-skills {
+    @include block($skills-color,-100%);
+  }
+}
+.about-me {
+  color: #ffffff;
+  margin-top: 15%;
+  text-align: justify;
+  p {
+    font-size: $size-text;
+  }
+}
+.title {
+  padding-bottom: 5%;
+  font-size: 36px;
+}
