@@ -1,6 +1,6 @@
 mixin menu(title,type)
-    li(class=type)
-        a(href="#")=title
+    li(class=type data-menuanchor=`${type}`)
+        a(href=`#${type}`)=title
 mixin block(type)
     div(class=`bottom-${type}`)
         .right-block

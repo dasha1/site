@@ -1,19 +1,12 @@
 $(document).ready( function () {
-        $('#navbar-toggle').click(function () {
-            $('#navbar-toggle').toggleClass('active');
-            $('.menu').toggleClass('menu-right');
-        });
-        $('.skils-content').viewportChecker({
-            callbackFunction: function() {
-
-            }
-            }
-
-    );
+    $('#fullpage').fullpage({
+    });
+    $('#navbar-toggle').click(function () {
+        $('#navbar-toggle').toggleClass('active');
+        $('.menu').toggleClass('menu-right');
+    });
     }
 );
-
-
 $('.skills-content').on('appear', function() {
     $('.circle.first').circleProgress({
         value: 0.95,

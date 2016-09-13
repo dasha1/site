@@ -5,8 +5,19 @@ html(lang="ru")
         include ./inc/_mixins
 
     body
-        include ./inc/_header
-        include ./inc/_about
-        include ./inc/_skills
+
+        a(id="navbar-toggle")
+            span
+        .menu
+            ul
+                +menu('Home','home')
+                +menu('About Me','about')
+                +menu('Skills','skills')
+                +menu('Portfolio','portfolio')
+                +menu('Contact','contact')
+        #fullpage
+            include ./inc/_header
+            include ./inc/_about
+            include ./inc/_skills
 
     include ./inc/_scripts

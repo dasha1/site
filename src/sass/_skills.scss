@@ -1,5 +1,8 @@
 .skills-content {
   @include bg($skills-color);
+  .bottom-contact {
+    @include block($portfilio-color,-200%);
+  }
 }
 .skills-wrap {
   color: #ffffff;

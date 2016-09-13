@@ -1,19 +1,11 @@
 include ../inc/_mixins
-header
-    a(id="navbar-toggle")
-        span
-    .menu
-        ul
-            +menu('Home','home')
-            +menu('About Me','about')
-            +menu('Skills','skills')
-            +menu('Portfolio','portfolio')
-            +menu('Contact','contact')
-    .main-title
-        .title-text
-            p I'm Dasha Perfilieva
-        .dev-text
-            p Front end Developer
-    +block('about')
+.section.vertical-scrolling(data-anchor="home")
+    .header
+        .main-title
+            .title-text
+                p I'm Dasha Perfilieva
+            .dev-text
+                p Front end Developer
+        +block('about')
 
 

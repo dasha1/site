@@ -1,4 +1,4 @@
-header{
+.header{
   background: url("#{$imgPath}header-background.png") center no-repeat;
   background-size:100% ;
   height: 100vh;
@@ -17,11 +17,12 @@ header{
   cursor: pointer;
 }
 #navbar-toggle {
+  z-index: 10;
   position: fixed;
   display: inline-block;
-  left: 98%;
+  left: 97%;
   margin-right: 20px;
-  @include hw(35px,25px);
+  @include hw(35px,35px);
   &.active {
     span {
       background-color: transparent;
@@ -54,6 +55,7 @@ header{
   }
 }
 .menu {
+  z-index: 10;
   top:40px;
   right: -285px;
   position: fixed;
