@@ -1,18 +1,29 @@
 .skills-content {
   @include bg($skills-color);
-  .bottom-contact {
+  .bottom-portfolio {
     @include block($portfilio-color,-200%);
   }
 }
 .skills-wrap {
   color: #ffffff;
-  margin-top: 15%;
+  margin-top: 2%;
   text-align: center;
+  font-size: $size-text;
+  .also {
+    text-align: left;
+    ul {
+      list-style: none;
+      li {
+        float: left;
+        padding-right: 15px;
+      }
+    }
+  }
+
 }
 .circle {
   padding-bottom: 15%;
   p {
-    font-size: $size-text;
     padding-top: 5%;
   }
 }

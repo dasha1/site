@@ -1,0 +1,16 @@
+include ../inc/_mixins
+.section.vertical-scrolling(data-anchor="portfolio")
+    .portfolio-content
+        .container
+            .row
+                +portfolio('Reclamare Seo','#',imgPath + "1.png")
+                +portfolio('Reclamare Adwords','#',imgPath + "1.jpg")
+                +portfolio('Reclamare Serm','#',imgPath + "1.png")
+            .row
+                +portfolio('Reclamare Seo','#',imgPath + "1.png")
+                +portfolio('Reclamare Adwords','#',imgPath + "1.jpg")
+                +portfolio('Reclamare Serm','#',imgPath + "1.png")
+            .more
+                a(href="#") See more projects...
+        +block('contact')
+

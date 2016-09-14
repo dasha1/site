@@ -9,3 +9,12 @@ mixin progres(text,value)
     .col-lg-3
         div(class=`circle ${value}`)
             p=text
+mixin portfolio(title,link,img)
+    .col-lg-4
+        .project.app
+            .title=title
+            .picture
+                img(src=`${img}`)
+            .link
+                a(href=`${link}`)
+                    span(data-hover="Look") Look

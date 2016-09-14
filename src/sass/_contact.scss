@@ -1,0 +1,42 @@
+.contact-content {
+  text-align: center;
+  padding-top: 2%;
+  color: #ffffff;
+  @include bg($contact-color);
+  input {
+    @include hw(50px,100%);
+    margin-bottom: 20px;
+    background:#c2e8f4;
+    border: none;
+    color: $dark-text-color;
+    padding-left: 16px;
+  }
+  input.message {
+    height: 212px;
+  }
+  input.submit {
+    color: #ffffff;
+    background-color: $about-color;
+  }
+  .icons {
+    margin: auto;
+    width: 300px;
+  }
+  .icon {
+    margin-bottom: 20px;
+  }
+  .img-icon {
+    margin: auto;
+    max-width: 45px;
+    max-height: 45px;
+  }
+  img {
+    @include hw(100%,100%);
+  }
+  .contact-details {
+    font-size: $size-text;
+    p {
+      padding-top: 5px;
+    }
+  }
+}

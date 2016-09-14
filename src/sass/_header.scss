@@ -73,7 +73,7 @@
     padding-right: 20px;
     text-align: right;
   }
-  @each $type,$color in ('home':$home-color,'about':$about-color,'skills':$skills-color,'portfolio':$portfilio-color,'contact':$contact-color) {
+  @each $type,$color in ('home':$home-color,'about':$hover-about-color,'skills':$hover-skills-color,'portfolio':$hover-portfolio-color,'contact':$hover-contact-color) {
     li.#{$type}:hover {@include hover($color);}
   }
   a{
