@@ -1,7 +1,7 @@
 .skills-content {
   @include bg($skills-color);
   .bottom-portfolio {
-    @include block($portfilio-color,-200%);
+    @include block($portfilio-color,0);
   }
 }
 .skills-wrap {
@@ -22,6 +22,12 @@
 
 }
 .circle {
+  @include respond-to(wide-screens) {
+    canvas {
+      height: 130px!important;
+      width: 130px!important;
+    }
+  }
   padding-bottom: 15%;
   p {
     padding-top: 5%;

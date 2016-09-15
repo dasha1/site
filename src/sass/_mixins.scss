@@ -34,3 +34,20 @@
   min-height: 100vh;
   background-color: $color;
 }
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $xsmall) { @content; }
+  }
+  @else if $media == small-screens {
+    @media only screen and (min-width: $xsmall + 1) and (max-width: $small - 1) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $small + 1) and (max-width: $medium - 1) { @content; }
+  }
+  @else if $media == large-screens {
+    @media only screen and (min-width: $medium + 1) and (max-width: $large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $large + 1) and (max-width: $xlarge - 1) { @content; }
+  }
+}

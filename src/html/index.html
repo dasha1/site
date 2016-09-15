@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!--link(rel="stylesheet" href=cssPath+"jquery.fullpage.min.css")-->
+    <link rel="stylesheet" href="../css/jquery.fullpage.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
     <title>Portfolio</title>
   </head>
-  <body><a id="navbar-toggle"><span></span></a>
+  <body>
+    <!--#preloader--><a id="navbar-toggle"><span></span></a>
     <div class="menu">
       <ul>
             <li class="home" data-menuanchor="home"><a href="#home">Home</a></li>
@@ -23,10 +25,10 @@
       <div class="section vertical-scrolling" data-anchor="home">
         <div class="header">
           <div class="main-title">
-            <div class="title-text">
+            <div class="title-text is-animated">
               <p>I'm Dasha Perfilieva</p>
             </div>
-            <div class="dev-text">
+            <div class="dev-text is-animated">
               <p>Front end Developer</p>
             </div>
           </div>
@@ -41,17 +43,17 @@
           <div class="container">
             <div class="about-me row">
               <div class="col-lg-12 title">A little about me
-                <div class="about-text app">
+                <div class="about-text is-animated">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar sodales lorem et aliquet. Sed sed aliquam dolor. Vestibulum eget ante quis mauris sollicitudin porttitor et ac nibh. Aenean eros augue, efficitur sed fermentum eget, aliquet a arcu. Nulla sed lectus nec ante blandit interdum. Quisque sed nulla at sapien dignissim auctor. Phasellus interdum quam augue, quis molestie dolor sagittis vitae. Cras nulla est, aliquet eget leo nec, gravida finibus mauris. Sed eget nulla et tortor feugiat blandit ut eu sem. Vestibulum at ipsum a leo lobortis bibendum quis vitae ex. Donec sodales placerat libero eget hendrerit. Integer vitae orci ultricies, cursus massa eget, dictum odio. Suspendisse mollis odio sed lobortis consequat. Vivamus id sem felis. Curabitur ac tincidunt est.</p>
                 </div>
               </div>
               <div class="col-lg-6 title">Education
-                <div class="about-text app">
+                <div class="about-text is-animated">
                   <p>Aenean urna tortor, rutrum nec orci a, ullamcorper suscipit lacus. Aliquam vel mi non augue facilisis bibendum. Integer ut dictum justo. Morbi eu erat quam. Aliquam ac est sit amet dui dignissim consequat ac sit amet dui. In venenatis elit eu tincidunt ultricies. Mauris ullamcorper ullamcorper mollis. Donec ut massa posuere, malesuada mauris in, viverra urna.</p>
                 </div>
               </div>
               <div class="col-lg-6 title">Experience
-                <div class="about-text app">
+                <div class="about-text is-animated">
                   <p>Nam eu convallis sem. Etiam volutpat, orci vitae sagittis vehicula, odio metus scelerisque felis, nec dignissim metus enim mollis tellus. In commodo in lorem nec placerat. Nulla lobortis lacus massa, vehicula ultrices sem iaculis ac. Pellentesque placerat massa ac lacus suscipit rutrum. Aliquam dictum nulla quis justo bibendum, vel egestas quam vulputate. Sed placerat lorem eu hendrerit auctor.</p>
                 </div>
               </div>
@@ -138,21 +140,21 @@
           <div class="container">
             <div class="row">
                     <div class="col-lg-4">
-                      <div class="project app">
+                      <div class="project is-animated">
                         <div class="title">Reclamare Seo</div>
                         <div class="picture"><img src="../img/1.png"></div>
                         <div class="link"><a href="#"><span data-hover="Look">Look</span></a></div>
                       </div>
                     </div>
                     <div class="col-lg-4">
-                      <div class="project app">
+                      <div class="project is-animated">
                         <div class="title">Reclamare Adwords</div>
                         <div class="picture"><img src="../img/1.jpg"></div>
                         <div class="link"><a href="#"><span data-hover="Look">Look</span></a></div>
                       </div>
                     </div>
                     <div class="col-lg-4">
-                      <div class="project app">
+                      <div class="project is-animated">
                         <div class="title">Reclamare Serm</div>
                         <div class="picture"><img src="../img/1.png"></div>
                         <div class="link"><a href="#"><span data-hover="Look">Look</span></a></div>
@@ -161,21 +163,21 @@
             </div>
             <div class="row">
                     <div class="col-lg-4">
-                      <div class="project app">
+                      <div class="project is-animated">
                         <div class="title">Reclamare Seo</div>
                         <div class="picture"><img src="../img/1.png"></div>
                         <div class="link"><a href="#"><span data-hover="Look">Look</span></a></div>
                       </div>
                     </div>
                     <div class="col-lg-4">
-                      <div class="project app">
+                      <div class="project is-animated">
                         <div class="title">Reclamare Adwords</div>
                         <div class="picture"><img src="../img/1.jpg"></div>
                         <div class="link"><a href="#"><span data-hover="Look">Look</span></a></div>
                       </div>
                     </div>
                     <div class="col-lg-4">
-                      <div class="project app">
+                      <div class="project is-animated">
                         <div class="title">Reclamare Serm</div>
                         <div class="picture"><img src="../img/1.png"></div>
                         <div class="link"><a href="#"><span data-hover="Look">Look</span></a></div>
@@ -239,6 +241,10 @@
         </div>
       </div>
     </div>
+    <div id="hellopreloader">
+      <div id="hellopreloader_preload"></div>
+    </div>
+    <script src="../js/preloader.js"></script>
   </body>
   <script src="../js/jquery.min.js"></script>
   <script src="../js/jquery.appear.min.js"></script>
