@@ -18,6 +18,7 @@
   font-size: 36px;
   @include respond-to(wide-screens) {
     font-size: 24px;
+    padding-bottom: 2%;
   }
 }
 

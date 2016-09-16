@@ -8,6 +8,7 @@ $(document).ready( function () {
     $isAnimatedMain.addClass('animated fadeInLeftBig');
 
     $('#fullpage').fullpage({
+        responsiveWidth: 1100,
         onLeave: function(index, nextIndex, direction) {
            if( index == 1 && nextIndex == 2 ) {
                 $isAnimatedAbout.addClass('animated fadeInUpBig');
